@@ -1,0 +1,33 @@
+.wrapper {
+
+}
+
+a {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #212529;
+}
+
+.box {
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ffbe0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.box:first-child {
+
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    width: 15px;
+    height: 15px
+}

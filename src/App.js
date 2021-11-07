@@ -1,14 +1,18 @@
 import './App.css';
-import Nav from "./companents/Nav";
-import Men from "./companents/Men";
+import Nav from "./companents/Nav/Nav";
+import Owner from "./companents/Ovner/Owner";
 import styled from "styled-components";
-
+import Content from "./companents/Content";
 function App() {
     return (
         <Wrapper>
-            <Men/>
-            <Nav/>
+            <Owner/>
+            <FlexDisplay>
+                <Nav/>
+                <Content/>
+            </FlexDisplay>
         </Wrapper>
+
     );
 }
 
@@ -18,7 +22,14 @@ const Wrapper = styled.div`
   max-width: 1280px;
   margin: auto;
   display: flex;
-  background-color: #856464;
+  //background-color: #856464;
   padding: 20px;
   gap: 20px
 `;
+
+const FlexDisplay = styled.div`
+  max-width: 70%;
+  //transform: translateY(100px);
+`;
+
+
