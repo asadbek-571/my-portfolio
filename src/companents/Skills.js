@@ -36,6 +36,9 @@ const obj = [
         key: "RabbitMQ",
         value: <Rabbitmq/>
     }, {
+        key: "Postman",
+        value: <Postman/>
+    }, {
         key: "HTML",
         value: <Html/>
     }, {
@@ -70,12 +73,11 @@ const obj = [
     {
         key: "Firebase",
         value: <Firebase/>
-    }, {
-        key: "Postman",
-        value: <Postman/>
-    },
+    }
 
 ]
+
+
 
 function Skills(props) {
     return (
@@ -112,19 +114,4 @@ const SvgIcons = styled.div`
   padding: 70px 0 50px 0;
   width: 100%;
 `;
-// const SvgIcon = styled.div`
-//   width: 70px;
-//   height: 70px;
-//   max-width: 50px;
-//   background-color: #a97171;;
-//   border-radius: 30%;
-//   display: flex;
-//
-//
-//   svg {
-//     width: 90%;
-//     height: 90%;
-//     padding: 5px;
-//     max-width: 100%;
-//   }
-// `;
+

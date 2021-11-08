@@ -47,9 +47,9 @@ function Nav() {
         < Router>
             <Wrapper className={"nav-black"}>
                 <Link className="a" to={"/"}><span className={'span'}><HomeSVG/></span></Link>
-                <Link className="a" to="/resume">Resume</Link>
+                <Link className="a" to="/resume">Rezyume</Link>
                 <Link className="a" to="/portfolio">Portfolio</Link>
-                <Link className="a" to="/contact">Contact</Link>
+                <Link className="a" to="/contact">Aloqa</Link>
                 <MyLinks>
                     <Link to="https://github.com/asadbek-571" target={'_blank'}><span><Git/></span></Link>
                     <Link to="/#"><Instagram/></Link>

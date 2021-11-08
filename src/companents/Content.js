@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import Design from "./Design";
 import education from "../svg/education.svg"
 import work from "../svg/work.svg"
 import Footer from "./Footer";
 import Skills from "./Skills";
+
 
 function Content() {
 
@@ -21,11 +22,15 @@ function Content() {
         key: 'Mavjud emas',
         value: ''
     }];
+
+
+
     return (
         <Wrapper>
-            <About>
-                <H4>Men haqimda</H4>
-                <p>Assalomu alaykum! Men <b>Asadbek Kushakov</b>, 2001-yil 7-avgustda tug'ulganman.
+
+            <About >
+                <H4 data-aos="fade-right">Men haqimda</H4>
+                <p data-aos="fade-left">Assalomu alaykum! Men <b>Asadbek Kushakov</b>, 2001-yil 7-avgustda tug'ulganman.
                     O'zbekiston Respublikasining Farg'ona viloyati, Uchko'prik tumanida istiqomat qilaman.
                     2019-yili Farg'ona viloyati Uchko'prik tumanidagi <b>Kasb hunar kollejining </b>
                     yoqilg'i va energetika sohasi bo'yicha o'qishni tamomlaganman.
@@ -34,8 +39,13 @@ function Content() {
                     bo'yicha o'qishni tamomladim.
                 </p>
             </About>
-            <Resume>
-                <H4>Resume</H4>
+
+            <Resume
+                data-aos="fade-up"
+            >
+                <H4
+                    data-aos="fade-right"
+                >Rezyume</H4>
                 <EducationAndWork>
                     <Design
                         container={46}
@@ -66,7 +76,7 @@ function Content() {
 
                 </EducationAndWork>
             </Resume>
-            <Skills h4={<H4>Skills </H4>}/>
+            <Skills h4={<H4>Ko'nikmalar </H4>}/>
             <Footer/>
         </Wrapper>
     )
@@ -85,11 +95,12 @@ const Wrapper = styled.div`
   padding: 115px 30px 0 30px;
   height: 94vh;
   border-radius: 5px;
-  overflow: scroll;
+  overflow-y: scroll;
   background: #f6f6f6;
-
+  overflow-x: hidden;
   ::-webkit-scrollbar {
     width: 10px;
+    
   }
 
   ::-webkit-scrollbar-corner {
@@ -97,7 +108,6 @@ const Wrapper = styled.div`
   }
 
   ::-webkit-scrollbar-thumb {
-    
     background: linear-gradient(transparent, #ffbe0f);
     border-radius: 5px;
   }

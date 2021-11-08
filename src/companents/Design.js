@@ -37,10 +37,17 @@ function Design(props) {
                     </h3>
                 </li>
                 {props.obj.map((value, index) => {
+                    let count=100;
                     return (
-                        <>
+                        <div
+                            data-aos="fade-up"
+                            // data-aos-anchor-placement="center-center"
+                            data-aos-easing="linear"
+                            data-aos-duration={count}
+                        >
                             <li style={{marginLeft: 5, width: `90%`}}>
                                 <div
+
                                     className={'line'}
                                     style={{
                                         height: index === 0 ? props.firstHeight : props.height,
@@ -68,7 +75,7 @@ function Design(props) {
                                     </span>
                                 </div>
                             </Info>
-                        </>
+                        </div>
                     )
                 })
                 }

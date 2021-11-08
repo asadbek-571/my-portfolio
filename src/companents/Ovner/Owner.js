@@ -25,7 +25,7 @@ const obj = [
 
 function Owner() {
     return (
-        <Wrapper>
+        <Wrapper data-aos="fade-right">
             <Img>
                 <img className={"owner"} src={men} alt="men"/>
             </Img>
